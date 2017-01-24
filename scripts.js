@@ -10,7 +10,7 @@ function Ticket(name, age, time) {
 
 Ticket.prototype.checkDate = function(){
   if (name.releaseDate < x) {
-    this.price - 1;
+    this.price --;
   }
 }
 
@@ -18,7 +18,7 @@ Ticket.prototype.checkAge = function(){
   if(this.age < 15 || this.age > 50){
     console.log(this.age);
     console.log(this.price);
-    this.price - 1;
+    this.price --;
   }
 }
 
