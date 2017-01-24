@@ -5,6 +5,7 @@ function Ticket(name, age, time) {
   this.age = age;
   this.time = time;
   this.price = 10;
+  console.log(this.age);
 }
 
 Ticket.prototype.checkDate = function(date){
@@ -38,5 +39,6 @@ $(document).ready(function(){
     console.log(name);
     console.log(age);
     var newTicket = new Ticket(name, age, time);
+    console.log(newTicket);
   })
 })
