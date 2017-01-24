@@ -1,4 +1,4 @@
-
+var newTicket;
 
 function Ticket(name, age, time) {
   this.name = name;
@@ -8,14 +8,16 @@ function Ticket(name, age, time) {
   console.log(this.age);
 }
 
-Ticket.prototype.checkDate = function(date){
+Ticket.prototype.checkDate = function(){
   if (name.releaseDate < x) {
     this.price - 1;
   }
 }
 
-Ticket.prototype.checkAge = function(age){
+Ticket.prototype.checkAge = function(){
   if(this.age < 15 || this.age > 50){
+    console.log(this.age);
+    console.log(this.price);
     this.price - 1;
   }
 }
@@ -36,9 +38,9 @@ $(document).ready(function(){
     var name = $('#movieName').val();
     var age = parseInt($('#userAge').val());
     var time = $('#userTime').val();
-    console.log(name);
-    console.log(age);
-    var newTicket = new Ticket(name, age, time);
-    console.log(newTicket);
+    // console.log(name);
+    // console.log(age);
+    newTicket = new Ticket(name, age, time);
+    // console.log(newTicket);
   })
 })
